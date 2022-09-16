@@ -29,7 +29,7 @@ export default {
 </template>
 <style>
 .Mynav {
-  margin: 2% 10%;
+  margin: 2% 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;

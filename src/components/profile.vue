@@ -2,23 +2,23 @@
   <div class="maindiv">
     <div class="navBarDiv">
       <img src="../assets/logo_b.png" width="50" alt="" />
-      <div><p>Offer Soffer for Buisness</p></div>
+      <div><p>Offer Soffer - Buisness</p></div>
       <div class="icons">
-        <img src="../assets/user.png" width="30" alt="" />
-        <img src="../assets/bell.png" width="30" alt="" />
-        <router-link to="/"
-          ><img src="../assets/logout.png" width="30" alt=""
-        /></router-link>
+        <img src="../assets/user.png" width="30" height="30" alt="" />
+        <img src="../assets/bell.png" width="30" height="30" alt="" />
+        <!-- <router-link class="Rlink" to="/" -->
+          <img src="../assets/logout.png" width="30" height="30" alt="" />
+        <!-- </router-link> -->
       </div>
     </div>
     <div class="MainCont">
       <div class="Img">
-        <img src="../assets/userPic.jpeg" width="240" height="240" alt="" />
+        <img src="../assets/userPic.jpeg" width="180" height="180" alt="" />
       </div>
       <div class="binfo">
         <p id="btitle">
           Tata Company
-          <img src="../assets/rating.png" width="100" alt="" />
+          <img src="../assets/rating.png" width="300" alt="" />
         </p>
         <div class="Conts">
           <div class="cont">
@@ -54,6 +54,10 @@ export default {
 };
 </script>
 <style scoped>
+  .Rlink {
+    text-decoration: none;
+    color: inherit;
+  }
 .navBarDiv {
   width: 100%;
   display: flex;
@@ -62,18 +66,21 @@ export default {
 }
 .navBarDiv > div > p {
   margin-top: 10px;
+  font-weight: 300;
   display: flex;
   align-items: center;
 }
 .navBarDiv {
-  font-size: x-large;
+  font-size: xx-large;
 }
 .navBarDiv > .icons {
   width: 150px;
   display: flex;
   justify-content: space-between;
+  align-items:center;
 }
 .maindiv {
+
   background: white;
   margin: 0px 10%;
   display: flex;
@@ -82,6 +89,7 @@ export default {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.322);
 }
+
 .MainCont > .Img {
   display: flex;
   align-items: center;
@@ -100,13 +108,14 @@ export default {
   width: 70%;
   display: flex;
   flex-direction: column;
+  align-items:center;
   justify-content: left;
-  align-items: center;
   border-radius: 2px;
 }
 .binfo > #btitle {
   width: 100%;
-  font-size: xx-large;
+
+  font-size: x-large;
   font-weight: 300;
   text-align: left;
   display: flex;
@@ -114,14 +123,17 @@ export default {
 }
 #btitle > img {
   margin-left: 20px;
+  height:50px;
 }
+
 .Conts {
   width: 100%;
+  height:70px;
   display: flex;
   justify-content: space-between;
 }
 .Conts > .cont {
-  width: 200px;
+  width: 100px;
 }
 .summary {
   width: 100%;
@@ -129,17 +141,20 @@ export default {
   color: rgb(73, 24, 48);
 }
 .cont > .btext {
-  text-align: left;
+  margin:0px;
+  font-weight: 300;
+  text-align: center;
   font-size: x-large;
 }
 .cont > .number1 {
-  text-align: left;
-  font-size: x-large;
+  text-align:center;
+  font-size: large;
+  font-weight: 300;
   color: rgb(0, 0, 0);
 }
 .cont > .number2 {
-  text-align: left;
-  font-size: x-large;
+  text-align: center;
+  font-size: large;
   color: red;
 }
 </style>

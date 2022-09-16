@@ -2,29 +2,34 @@
   <div>
     <div class="StoresCont">
       <div class="Store" v-for="store in Stores" :key="store.storeName">
-        <div class="StoreImg">
-          <img
-            :src="store.NEW ? store.img : '/img/' + store.img"
-            width="300"
-            height="200"
-            alt=""
-          />
-        </div>
-        <div class="StoreInfo">
-          <div class="StoreName">
-            <p>{{ store.storeName }}</p>
-            <div>
-              <span>Ratings 4.1</span
-              ><img src="../assets/rating.png" width="100" alt="" />
+        <div class="FirstRow">
+          <div class="StoreImg">
+            <img
+              :src="store.NEW ? store.img : '/img/' + store.img"
+              width="200"
+              height="150"
+              alt=""
+            />
+          </div>
+          <div class="StoreInfo">
+            <div class="StoreName">
+              <div style="display:flex;align-items:left;flex-direction:column;justify-content:left">
+                <p id="storeName">{{ store.storeName }}</p>
+                <div>
+                  <span>4.1</span
+                  ><img src="../assets/rating.png" width="100" alt="" />
+                </div>
+              </div>
+              
+            </div>
+            <div class="StoreButton">
+              <button class="StoreContact">Call</button>
+              <button class="StoreLocation">Location</button>
             </div>
           </div>
-          <div class="StoreAddress">
-            {{ store.storeAddress }}
-          </div>
-          <div class="StoreButton">
-            <button class="StoreContact">Call</button>
-            <button class="StoreLocation">Location</button>
-          </div>
+        </div>
+        <div class="StoreAddress">
+          {{ store.storeAddress }}
         </div>
       </div>
     </div>
@@ -175,13 +180,13 @@ p {
   padding: 2% 10%;
   display: flex;
   flex-direction: row;
+  justify-content:space-between;
   flex-flow: row wrap;
   background: rgb(255, 255, 255);
 }
 .Store {
-  width: 100%;
+  width: 45%;
   margin: 5px;
-  display: flex;
   padding: 10px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.815);
@@ -189,6 +194,10 @@ p {
 }
 .Store:hover {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.281);
+}
+.FirstRow{
+  display: flex;
+
 }
 .StoreImg {
   margin: 0px 2%;
@@ -202,22 +211,24 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-.StoreName > p {
-  font-size: 35px;
+ #storeName{
+  margin:0px;
+  font-size: 25px;
 }
 .StoreButton {
   display: flex;
-  justify-content: space-around;
+}
+.StoreAddress{
+  padding:0px 10px;
 }
 .StoreButton > button {
-  margin: 10px 0px;
+  margin: 10px;
   border: none;
   outline: none;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.322);
-  width: 140px;
+  width: 80px;
   height: 40px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.63);
