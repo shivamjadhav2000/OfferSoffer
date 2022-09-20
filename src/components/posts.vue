@@ -41,7 +41,7 @@
       <div>
         <b-modal id="bv-modal-example" hide-footer>
           <template #modal-title>
-            <code>create a post</code>
+            <code>Create a post</code>
           </template>
           <div class="d-block text-center">
             <form enctype="multipart/form-data" novalidate>
@@ -194,9 +194,11 @@ p {
   justify-content: space-between;
   padding: 10px 5px;
   border-radius: 5px;
+  border:1px solid rgba(59, 57, 57, 0.096);
   background: rgba(255, 255, 255, 0.815);
-  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.26);
 }
+.post:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
 .sec1 {
   display: flex;
   justify-content: space-evenly;

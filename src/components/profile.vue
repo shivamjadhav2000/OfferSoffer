@@ -4,9 +4,10 @@
       <img src="../assets/logo_b.png" width="50" alt="" />
       <div><p>Offer Soffer - Buisness</p></div>
       <div class="icons">
+
         <img src="../assets/user.png" width="30" height="30" alt="" />
         <img src="../assets/bell.png" width="30" height="30" alt="" />
-        <!-- <router-link class="Rlink" to="/" -->
+        <!-- <router-link class="Rlink" to="/"> -->
           <img src="../assets/logout.png" width="30" height="30" alt="" />
         <!-- </router-link> -->
       </div>
@@ -74,6 +75,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height:80px;
 }
 .Ratnig{
   margin:0px 100px;

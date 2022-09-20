@@ -15,11 +15,11 @@ export default {
       <div :class="page == 'Posts' ? 'active' : ''">
         <router-link class="Rlink" to="/mainPage"><p class="items">Posts</p></router-link>
       </div>
-      <div :class="page == 'Stores' ? 'active' : ''">
+      <!-- <div :class="page == 'Stores' ? 'active' : ''">
         <router-link class="Rlink" to="/stores"><p class="items">Stores</p></router-link>
-      </div>
+      </div> -->
       <div :class="page == 'Ratings' ? 'active' : ''"> 
-        <router-link class="Rlink" to="/ratings"><p class="items">Ratings</p></router-link>
+        <router-link class="Rlink" to="/ratings"><p class="items">Stores</p></router-link>
       </div>
       <div :class="page == 'Leads' ? 'active' : ''">
         <router-link class="Rlink" to="/leads"><p class="items">Leads</p></router-link>

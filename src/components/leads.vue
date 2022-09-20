@@ -69,7 +69,7 @@ export default {
 </script>
 <style scoped>
 .LeadsCont {
-  margin: 10px 10%;
+  margin: 10px 20%;
 }
 .progressDiv {
     margin:20px 0px;

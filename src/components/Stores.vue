@@ -115,7 +115,7 @@
             $bvModal.hide('bv-modal-example');
             createStore();
           "
-          >Add Post</b-button
+          >Add Store</b-button
         >
       </b-modal>
     </div>
