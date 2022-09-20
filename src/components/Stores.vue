@@ -6,19 +6,23 @@
           <div class="StoreImg">
             <img
               :src="store.NEW ? store.img : '/img/' + store.img"
-              width="200"
-              height="150"
               alt=""
             />
           </div>
           <div class="StoreInfo">
             <div class="StoreName">
-              <div style="display:flex;align-items:left;flex-direction:column;justify-content:left">
+              <div>
                 <p id="storeName">{{ store.storeName }}</p>
-                <div>
-                  <span>4.1</span
-                  ><img src="../assets/rating.png" width="100" alt="" />
+                <div class="Rating">
+                  <p>4.9</p>
+                  <img src="../assets/star.png"/>
+                  <img src="../assets/star.png"/>
+                  <img src="../assets/star.png"/>
+                  <img src="../assets/star.png"/>
+                  <img src="../assets/star.png"/>
                 </div>
+              </div>
+              <div >
               </div>
               
             </div>
@@ -148,7 +152,6 @@ export default {
   methods: {
     filesChange() {
       this.example = this.$refs.file.files[0];
-      console.log("this.sdaafafaf=", this.example);
       if (
         this.example.name.includes(".png") ||
         this.example.name.includes(".jpg")
@@ -173,9 +176,7 @@ export default {
 };
 </script>
 <style scoped>
-p {
-  margin: 5px;
-}
+
 .StoresCont {
   padding: 2% 10%;
   display: flex;
@@ -184,6 +185,7 @@ p {
   flex-flow: row wrap;
   background: rgb(255, 255, 255);
 }
+
 .Store {
   width: 45%;
   margin: 5px;
@@ -197,6 +199,9 @@ p {
 }
 .FirstRow{
   display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.425);
 
 }
 .StoreImg {
@@ -205,31 +210,51 @@ p {
   align-items: center;
 }
 .StoreImg > img {
-  border-radius: 5px;
+  width:220px;
+ height: 150px;
+ border-radius:10px;
 }
 .StoreInfo {
   width: 100%;
+  height:150px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
+.Rating{
+  margin-top:15px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+.Rating>img{
+  width:20px;
+  height:20px
+}
+.Rating>p{
+  margin:0px;
+  font-size: x-large;
+  font-weight: 300;
+}
+
  #storeName{
   margin:0px;
   font-size: 25px;
 }
 .StoreButton {
   display: flex;
+  justify-content: space-between;
 }
 .StoreAddress{
-  padding:0px 10px;
+  padding:10px 10px;
 }
 .StoreButton > button {
-  margin: 10px;
   border: none;
   outline: none;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.322);
   width: 80px;
-  height: 40px;
+  height: 30px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.63);
 }

@@ -16,10 +16,19 @@
         <img src="../assets/userPic.jpeg" width="180" height="180" alt="" />
       </div>
       <div class="binfo">
-        <p id="btitle">
+        <div class="btitle">
+          <p>
           Tata Company
-          <img src="../assets/rating.png" width="300" alt="" />
-        </p>
+          </p>
+          <div class="Ratnig">
+            <img src="../assets/star.png"/>
+            <img src="../assets/star.png"/>
+            <img src="../assets/star.png"/>
+            <img src="../assets/star.png"/>
+            <img src="../assets/star.png"/>
+          </div>
+        </div>
+        
         <div class="Conts">
           <div class="cont">
             <p class="btext">followers</p>
@@ -64,6 +73,16 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
+.Ratnig{
+  margin:0px 100px;
+  width:300px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Ratnig>img{
+  width:20px;
+}
 .navBarDiv > div > p {
   margin-top: 10px;
   font-weight: 300;
@@ -87,7 +106,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.219);
 }
 
 .MainCont > .Img {
@@ -112,19 +131,21 @@ export default {
   justify-content: left;
   border-radius: 2px;
 }
-.binfo > #btitle {
+.binfo > .btitle {
   width: 100%;
-
-  font-size: x-large;
-  font-weight: 300;
-  text-align: left;
   display: flex;
   align-items: center;
+  padding:10px 0px;
 }
-#btitle > img {
-  margin-left: 20px;
-  height:50px;
+.btitle>p{
+  margin:0px;
+  display:flex;
+  font-size: x-large;
+  font-weight: 300;
+  color:rgb(221, 32, 32);
+  align-items: center;
 }
+
 
 .Conts {
   width: 100%;
@@ -149,12 +170,13 @@ export default {
 .cont > .number1 {
   text-align:center;
   font-size: large;
-  font-weight: 300;
+  font-weight: 400;
   color: rgb(0, 0, 0);
 }
 .cont > .number2 {
   text-align: center;
   font-size: large;
-  color: red;
+  font-weight: 400;
+  color: rgb(0, 0, 0);;
 }
 </style>

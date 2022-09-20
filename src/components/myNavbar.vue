@@ -13,23 +13,23 @@ export default {
   <div>
     <div class="Mynav">
       <div :class="page == 'Posts' ? 'active' : ''">
-        <router-link class="Rlink" to="/mainPage"><p>Posts</p></router-link>
+        <router-link class="Rlink" to="/mainPage"><p class="items">Posts</p></router-link>
       </div>
       <div :class="page == 'Stores' ? 'active' : ''">
-        <router-link class="Rlink" to="/stores"><p>Stores</p></router-link>
+        <router-link class="Rlink" to="/stores"><p class="items">Stores</p></router-link>
       </div>
       <div :class="page == 'Ratings' ? 'active' : ''"> 
-        <router-link class="Rlink" to="/ratings"><p>Ratings</p></router-link>
+        <router-link class="Rlink" to="/ratings"><p class="items">Ratings</p></router-link>
       </div>
       <div :class="page == 'Leads' ? 'active' : ''">
-        <router-link class="Rlink" to="/leads"><p>Leads</p></router-link>
+        <router-link class="Rlink" to="/leads"><p class="items">Leads</p></router-link>
       </div>
     </div>
   </div>
 </template>
 <style>
 .Mynav {
-  margin: 2% 30%;
+  margin: 0px 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,15 +42,18 @@ export default {
   align-items: center;
   cursor: pointer;
 }
-.Mynav > div > p {
-  font-size: x-large;
-  font-weight: bold;
+
+.items{
+  padding:15px 0px;
 }
 .Rlink {
   text-decoration: none;
   color: inherit;
 }
 .active {
+  position: relative;
+  top:-2px;
+  border-top :2px solid red;
   color: red;
 }
 </style>
