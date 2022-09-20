@@ -68,7 +68,9 @@ export default {
     color: inherit;
   }
 .navBarDiv {
-  width: 100%;
+  width: 145%;
+  padding:0px 25%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.219);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,9 +101,8 @@ export default {
   align-items:center;
 }
 .maindiv {
-
   background: white;
-  margin: 0px 10%;
+  margin: 0px 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,5 +1,9 @@
 <template>
   <div class="logindiv">
+    <div class="Headings">
+      <p class="h1">Offer - Soffer</p>
+      <p class="h5 text-secondary" >Buisness</p>
+    </div>
     <div>
       <form action="/mainPage" class="Form">
         <p class="title">Sign in</p>
@@ -19,7 +23,7 @@
         <button>Submit</button>
         <div class="extra">
           <a href="http://" class="grey">Not a member?</a>
-          <p class="title">Sign Up</p>
+          <p class="title">sign up</p>
         </div>
       </form>
     </div>
@@ -27,12 +31,17 @@
 </template>
 
 <style>
+  .Headings{
+    text-align: center;
+    color: red;
+    padding:20px 0px;
+  }
 .logindiv {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background: rgb(236, 17, 17);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +74,7 @@ input {
   outline:none;
   border-bottom: 1px solid black;
   background: none;
-  color: rgb(236, 17, 17);
+  color: rgba(0, 0, 0, 0.699);
   font-size: large;
   font-weight: bold;
   text-align: left;
@@ -91,8 +100,12 @@ input {
   box-shadow: 0 0 5px 0;
 }
 .extra {
+  width:170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.extra>p{
+  margin:0px;
 }
 </style>

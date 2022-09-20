@@ -178,17 +178,17 @@ p {
   margin: 5px;
 }
 .PostsCont {
-  padding: 2% 10%;
+  margin: 2% 15%;
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
+  justify-content: space-around;
   background: rgb(255, 255, 255);
 }
 .post {
   width: 280px;
   height: 435px;
   margin: 10px 0px;
-  margin-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
