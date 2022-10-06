@@ -1,6 +1,6 @@
 {
   "name": "offersoffer",
-  "homepage": "http://offersofferapp.com",
+  "homepage": "https://offersofferapp.com",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
