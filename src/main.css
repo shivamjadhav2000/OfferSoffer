@@ -1,0 +1,37 @@
+ 
+  body {
+    padding:100px;
+    min-height: 100vh;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: color 0.5s, background-color 0.5s;
+    line-height: 1.6;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+@font-face {
+    font-family: "Karla";
+    src: url(./fonts/Karla/Karla-Bold.ttf) format("truetype"),
+      url(./fonts/Karla/Karla-BoldItalic.ttf),
+      url(./fonts/Karla/Karla-ExtraBold.ttf),
+      url(./fonts/Karla/Karla-ExtraBoldItalic.ttf),
+      url(./fonts/Karla/Karla-ExtraLight.ttf),
+      url(./fonts/Karla/Karla-ExtraLightItalic.ttf),
+      url(./fonts/Karla/Karla-Italic-VariableFont_wght.ttf),
+      url(./fonts/Karla/Karla-Italic.ttf), url(./fonts/Karla/Karla-Light.ttf),
+      url(./fonts/Karla/Karla-LightItalic.ttf),
+      url(./fonts/Karla/Karla-Medium.ttf),
+      url(./fonts/Karla/Karla-MediumItalic.ttf),
+      url(./fonts/Karla/Karla-Regular.ttf),
+      url(./fonts/Karla/Karla-SemiBold.ttf),
+      url(./fonts/Karla/Karla-SemiBoldItalic.ttf),
+      url(./fonts/Karla/Karla-VariableFont_wght.ttf);
+  }
+ 

@@ -23,36 +23,29 @@
           <p>
           Tata Company
           </p>
-          <div class="Ratnig">
-            <img src="../assets/star.png"/>
-            <img src="../assets/star.png"/>
-            <img src="../assets/star.png"/>
-            <img src="../assets/star.png"/>
-            <img src="../assets/star.png"/>
-          </div>
+          
         </div>
         
         <div class="Conts">
           <div class="cont">
-            <p class="btext">followers</p>
             <p class="number1">10K</p>
+            <p class="btext">followers</p>
           </div>
           <div class="cont">
+            <p class="number1">13900+</p>
             <p class="btext">visitors</p>
-            <p class="number2">13900+</p>
           </div>
           <div class="cont">
+            <p class="number1">4.5</p>
             <p class="btext">ratings</p>
-            <p class="number2">4.5</p>
           </div>
         </div>
         <div>
           <p class="summary">
             The kurti changed the Indian ready-made garment sector. Leading this
-            fashion revolution — from a store in south Mumbai's Hughes Road
-            precinct — was Tata group's flagship retail store Westside. Its
-            trademark kurti was sold under the same brand name, Westside.
+            fashion revolution..
           </p>
+          <p class="websitelink">https://westside.com/fashion</p>
         </div>
       </div>
     </div>
@@ -113,7 +106,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.219);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.219);
 }
 
 .MainCont > .Img {
@@ -148,42 +141,45 @@ export default {
   margin:0px;
   display:flex;
   font-size: x-large;
-  font-weight: 300;
-  color:rgb(221, 32, 32);
+  font-weight: 400;
+  color:rgb(5, 13, 29);
   align-items: center;
 }
 
 
 .Conts {
   width: 100%;
-  height:70px;
+  height:40px;
   display: flex;
-  justify-content: space-between;
+  gap:20px;
 }
 .Conts > .cont {
-  width: 100px;
+  display:flex;
+  align-items: center;
+  gap: 5px;
 }
 .summary {
   width: 100%;
   text-align: left;
-  color: rgb(73, 24, 48);
+  color: rgba(0, 0, 0, 0.808);
+}
+.websitelink{
+  font-size: medium;
+  font-weight: 600;
+  color:rgba(0, 0, 95, 0.774);
 }
 .cont > .btext {
   margin:0px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
-  font-size: x-large;
+  font-size: large;
+  padding: 0%;
 }
 .cont > .number1 {
+  margin:0px;
   text-align:center;
-  font-size: large;
-  font-weight: 400;
+  font-size:medium;
+  font-weight: 500;
   color: rgb(0, 0, 0);
-}
-.cont > .number2 {
-  text-align: center;
-  font-size: large;
-  font-weight: 400;
-  color: rgb(0, 0, 0);;
 }
 </style>
