@@ -1,5 +1,5 @@
 <template>
-  <div class="maindiv">
+  <div >
     <div class="navBarDiv">
       <img src="../assets/logo_b.png" width="50" alt="" />
       <div><p>Offer Soffer - Buisness</p></div>
@@ -12,6 +12,8 @@
         <!-- </router-link> -->
       </div>
     </div>
+
+    <div class="maindiv">
     <div class="MainCont">
       <div class="Img">
         <img src="../assets/userPic.jpeg" width="180" height="180" alt="" />
@@ -55,6 +57,8 @@
       </div>
     </div>
   </div>
+</div>
+
 </template>
 <script>
 export default {
@@ -69,13 +73,13 @@ export default {
     color: inherit;
   }
 .navBarDiv {
-  width: 145%;
-  padding:0px 25%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    background-color: rgb(255, 255, 255);
+  padding:0px 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height:80px;
+  height:60px;
 }
 .Ratnig{
   margin:0px 100px;
@@ -88,10 +92,10 @@ export default {
   width:20px;
 }
 .navBarDiv > div > p {
-  margin-top: 10px;
   font-weight: 300;
   display: flex;
   align-items: center;
+  margin:0px;
 }
 .navBarDiv {
   font-size: xx-large;

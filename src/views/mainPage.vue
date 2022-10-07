@@ -13,7 +13,6 @@ import posts from "../components/posts.vue";
 </template>
 <style>
 .mainPage {
-  padding: 10px;
   background: rgb(255, 255, 255);
 }
 </style>
