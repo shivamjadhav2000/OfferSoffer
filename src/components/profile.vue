@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="profileMain">
     <div class="navBarDiv">
       <img src="../assets/logo_b.png" width="50" alt="" />
       <div><p>Offer Soffer - Buisness</p></div>
@@ -16,7 +16,7 @@
     <div class="maindiv">
     <div class="MainCont">
       <div class="Img">
-        <img src="../assets/userPic.jpeg" width="180" height="180" alt="" />
+        <img src="../assets/westsidelogo.jpg" width="180" height="180" alt="" />
       </div>
       <div class="binfo">
         <div class="btitle">
@@ -45,7 +45,7 @@
             The kurti changed the Indian ready-made garment sector. Leading this
             fashion revolution..
           </p>
-          <p class="websitelink">https://westside.com/fashion</p>
+          <p class="websitelink">www.westside.com/fashion</p>
         </div>
       </div>
     </div>
@@ -100,7 +100,6 @@ export default {
   align-items:center;
 }
 .maindiv {
-  background: white;
   margin: 0px 15%;
   display: flex;
   flex-direction: column;
@@ -114,6 +113,7 @@ export default {
   align-items: center;
 }
 .MainCont > .Img > img {
+  
   border-radius: 50%;
 }
 
@@ -141,8 +141,7 @@ export default {
   margin:0px;
   display:flex;
   font-size: x-large;
-  font-weight: 400;
-  color:rgb(5, 13, 29);
+  font-weight: 300;
   align-items: center;
 }
 
@@ -164,9 +163,9 @@ export default {
   color: rgba(0, 0, 0, 0.808);
 }
 .websitelink{
-  font-size: medium;
-  font-weight: 600;
-  color:rgba(0, 0, 95, 0.774);
+  font-size: 18px;
+  font-weight: bold;
+  color:rgba(1, 1, 56, 0.774);
 }
 .cont > .btext {
   margin:0px;
@@ -179,7 +178,7 @@ export default {
   margin:0px;
   text-align:center;
   font-size:medium;
-  font-weight: 500;
+  font-weight: bolder;
   color: rgb(0, 0, 0);
 }
 </style>

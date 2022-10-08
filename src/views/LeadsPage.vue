@@ -12,8 +12,4 @@ import leads from "../components/leads.vue";
   </div>
 </template>
 <style>
-
-.mainPage {
-  background: rgb(255, 255, 255);
-}
 </style>

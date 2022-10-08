@@ -12,7 +12,4 @@ import ratings from "../components/ratings.vue";
   </div>
 </template>
 <style>
-.mainPage {
-  background: rgb(255, 255, 255);
-}
 </style>

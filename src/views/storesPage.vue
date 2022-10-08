@@ -12,7 +12,4 @@ import Stores from "../components/Stores.vue";
   </div>
 </template>
 <style>
-.mainPage {
-  background: rgb(255, 255, 255);
-}
 </style>

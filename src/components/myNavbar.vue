@@ -10,7 +10,7 @@ export default {
 };
 </script>
 <template>
-  <div>
+  <div class="navMain">
     <div class="Mynav">
       <div :class="page == 'Posts' ? 'active' : ''">
         <router-link class="Rlink" to="/mainPage"><img src="../assets/posts.png" width="20" alt=""><p class="items">Posts</p></router-link>
@@ -33,7 +33,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(255, 255, 255);
   border-radius: 5px;
 }
 .Mynav > div {
