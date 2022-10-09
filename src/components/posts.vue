@@ -171,26 +171,22 @@
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 4%;
   }
   .post {
-    width: 220px;
-    height: 320px;
+    width: 22%;
+    height: 300px;
     margin: 10px 0px;
     display: flex;
     color:white;
     font-size: large;
     position: relative;
     text-transform: uppercase; 
-    text-shadow: black;
     font-weight:900;
     flex-direction: column;
     justify-content: space-between;
     border:1px solid rgba(59, 57, 57, 0.096);
     background: rgba(255, 255, 255, 0.815);
-  }
-  .post>.postImg{
-    background-color: black;
   }
   .PostIconsCont{
     justify-content: center;
@@ -209,8 +205,8 @@
     bottom:40px;
   }
   .post>.postImg>img{
-    width: 220px;
-    height: 320px;
+    width: 100%;
+    height: 300px;
   }
   .postImg:hover{
     opacity: 0.8;
