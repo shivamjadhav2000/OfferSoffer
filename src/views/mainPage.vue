@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import myNavbar from "../components/myNavbar.vue";
 import profile from "../components/profile.vue";
-import posts from "../components/posts.vue";
-import newPosts from "../components/newPosts.vue";
+import Posts from "../components/posts.vue";
 
 </script>
 
@@ -10,7 +9,7 @@ import newPosts from "../components/newPosts.vue";
   <div class="mainPage">
     <profile />
     <myNavbar page="Posts" />
-    <newPosts />
+    <Posts />
   </div>
 </template>
 

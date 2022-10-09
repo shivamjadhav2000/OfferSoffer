@@ -127,7 +127,7 @@ export default {
   width: 70%;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items:left;
   justify-content: left;
   border-radius: 2px;
 }
