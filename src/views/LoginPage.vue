@@ -5,7 +5,7 @@
       <p class="h5 text-secondary" >Buisness</p>
     </div>
     <div>
-      <form action="/mainPage" class="Form">
+      <form  class="Form">
         <p class="title">Sign in</p>
         <div class="formElements">
           <label for="phoneNumebr">
@@ -20,7 +20,7 @@
           <input type="text" name="password" placeholder="Password" />
         </div>
         <a href="http://" class="grey">Forgot your password</a>
-        <button>Submit</button>
+        <button @click="handlePush()">Submit</button>
         <div class="extra">
           <a href="http://" class="grey">Not a member?</a>
           <p class="title">sign up</p>
@@ -29,7 +29,21 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data (){
+    return {
 
+    }
+  },
+  methods:{
+    handlePush :function(){
+      this.$router.push('/mainpage')
+    }
+  }
+}
+</script>
+>
 <style>
   .Headings{
     text-align: center;
